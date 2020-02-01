@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Campus Canoe</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,39 +15,43 @@
         CAMPUS TECNIFICACIÓN
     </header>
     <main>
-        <section>
+        <section class="cover">
             <h1>CAMPUS TECNIFICACIÓN</h1>
             <img src="img2/logo.png" class="logo" />
-            <h2>CALPE 21 - 26 JUNIO</h2>
+            <h2>CALPE 21 - 26 JUNIO 2020</h2>
         </section>
-        <section>
+        <section class="accommodation">
+            <div class="gallery">
+                <img src="img2/alojamiento0.jpg" class="photo" />
+                <img src="img2/alojamiento1.jpg" class="photo" />
+                <img src="img2/alojamiento2.jpg" class="photo" />
+                <img src="img2/alojamiento3.jpg" class="photo" />
+            </div>
             <h3>ALOJAMIENTO</h3>
-            <div class="card gallery">
-                <img src="img2/image2.jpeg" class="photo" />
-                <img src="img2/image2.jpeg" class="photo" />
-                <img src="img2/image2.jpeg" class="photo" />
-                <img src="img2/image2.jpeg" class="photo" />
-            </div>
-            <div class="card">
-                Lorem ipsum dolor sit amet...
+            <div class="content">
+                <p>
+                    Situado en Calpe, en el corazón de la Costa Blanca, 4YOU no pretende ser solo un Youth Hostel junto
+                    al mar, sino un punto de encuentro de jóvenes de todo el mundo donde disfrutar de una gran variedad
+                    de actividades para todo tipo de visitantes.
+                </p>
+                <a download href="./pdf/4YOU.pdf"><button class="donwnload">Mas información...</button></a>
             </div>
         </section>
-        <section>
+        <section class="facilities">
+            <div class="gallery">
+                <img src="img2/pista1.jpg" class="photo" />
+                <img src="img2/pista2.jpg" class="photo" />
+                <img src="img2/pista1.jpg" class="photo" />
+            </div>
             <h3>INSTALACIONES</h3>
-            <div class="card gallery">
-                <img src="img2/image3.jpeg" class="photo" />
-                <img src="img2/image3.jpeg" class="photo" />
-                <img src="img2/image3.jpeg" class="photo" />
-                <img src="img2/image3.jpeg" class="photo" />
-            </div>
-            <div class="card">
+            <div class="content">
                 Lorem ipsum dolor sit amet...
             </div>
         </section>
-        <section class="pricing">
+        <section class="prices">
             <h3>Precios</h3>
-            <div class="prices">
-                <div class="card">
+            <div class="content">
+                <div class="card price">
                     <ul>
                         <li>Alojamiento en pensión completa</li>
                         <li>Ropa de Entrenamiento</li>
@@ -57,7 +61,7 @@
                     </ul>
                     <footer> 350 € </footer>
                 </div>
-                <div class="card">
+                <div class="card price">
                     <ul>
                         <li>Alojamiento en pensión completa</li>
                         <li>Ropa de Entrenamiento</li>
@@ -73,16 +77,18 @@
         </section>
         <section class="contact">
             <h3>Formulario de Contacto</h3>
-            <form>
-                <div class="field">
-                    <label>Nombre</label>
-                    <input type="text" />
-                </div>
-                <div class="field">
-                    <label>Correo Electrónico</label>
-                    <input type="email" />
-                </div>
-            </form>
+            <div class="content">
+                    <div class="field">
+                        <label>Nombre</label>
+                        <input type="text" />
+                    </div>
+                    <div class="field">
+                        <label>Correo Electrónico</label>
+                        <input type="email" />
+                    </div>
+                    <br/><br/>
+                    <button>Enviar</button>
+            </div>
         </section>
     </main>
 
