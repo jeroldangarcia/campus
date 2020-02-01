@@ -166,7 +166,13 @@ section.accommodation {
 
 section.facilities {
     background-color: rgb(168, 157, 192);
-    background-image: url("img/image2.jpeg");
+    background-image: url("img/image3.jpeg");
+    background-blend-mode: screen;
+}
+
+section.activities {
+    background-color: rgb(168, 157, 192);
+    background-image: url("img/image4.jpeg");
     background-blend-mode: screen;
 }
 
@@ -174,7 +180,7 @@ section.prices {
     background-color: #fff;
 }
 
-section.prices>.content {
+section>.content.horizontal {
     display: flex;
     flex-flow: wrap;
     justify-content: center;
@@ -185,14 +191,27 @@ section.contact {
 }
 
 
-.card.price {
+.card {
     margin: 1em;
     display: flex;
     flex-direction: column;
-    height: 260px;
+    min-width: 200px;
+    min-height: 260px;
 }
 
-.card.price>ul {
+.card>h4 {
+    font-weight: 300;
+    background-color: #0046a0;
+    color: #FFF;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.card>ul {
     flex:1;
     font-weight: 100;
 }
