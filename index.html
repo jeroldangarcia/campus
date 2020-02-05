@@ -8,6 +8,28 @@
     <title>Campus Canoe</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script>
+
+        var form = document.getElementsByName('inscripcion')
+        form.url = 'https://script.google.com/macros/s/AKfycbyiI0IDy-H5j2ynzXBJbvTuigqZcC7LFcXUuJl_1o5IYkmiOd0/exec
+        
+        function sendInscription() {
+
+            fetch
+        }
+
+        $('#submit-form').on('click', function (e) {
+            e.preventDefault();
+            var jqxhr = $.ajax({
+                url: url,
+                method: "GET",
+                dataType: "json",
+                data: $form.serializeObject()
+            }).success(
+                // do something
+            );
+        })
+    </script>
 </head>
 
 <body>
@@ -39,7 +61,7 @@
                     <ul>
                         <li>Explanada del Bernabeu</li>
                         <li>26 Junio</li>
-                        <li>14:00 horas</li>
+                        <li>21:00 horas aprox.</li>
                     </ul>
                 </div>
             </div>
@@ -147,31 +169,7 @@
             </div>
         </section>
         <section class="contact">
-            <h3>Formulario de Inscripción</h3>
-            <form class="content" action="">
-                <div class="field">
-                    <label>*Nombre</label>
-                    <input name="nombre" type="text" required/>
-                </div>
-                <div class="field">
-                    <label>*Apellidos</label>
-                    <input name="apellidos" type="text" required/>
-                </div>
-                <div class="field">
-                    <label>*Correo Electrónico</label>
-                    <input name="email" type="email" required/>
-                </div>
-                <div class="field">
-                    <label>*Telefono Contacto</label>
-                    <input name="telefono" type="email" required/>
-                </div>
-                <div class="field">
-                    <label>Club de Procedencia</label>
-                    <input name="club" type="email" />
-                </div>
-                <br /><br />
-                <button>Enviar</button>
-            </form>
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc_r0aD89yKTQouBwcDxyp6R_o3_PiQeYgS2YHw4k1uq4OY0g/viewform?embedded=true" width="640" height="1058" frameborder="0" marginheight="0" marginwidth="0">Cargando…</iframe>
         </section>
     </main>
 

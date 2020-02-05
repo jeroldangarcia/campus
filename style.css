@@ -189,6 +189,7 @@ section>.content.horizontal {
 
 section.contact {
     background-color: #f2f5f6;
+    align-items: center;
 }
 
 
@@ -232,8 +233,3 @@ section.contact {
     align-items: center;
     justify-content: center;
 }
-
-
-
-
-
