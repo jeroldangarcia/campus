@@ -28,7 +28,8 @@ button:hover {
 
 h1 {
     font-size: 4vh;
-    padding: 3em;
+    padding-top: 3em;
+    margin-bottom: 0em;
     white-space: nowrap;
 }
 
@@ -211,11 +212,18 @@ section.contact {
     margin: 0;
 }
 
-.card>ul {
+.card>details {
     flex:1;
     font-weight: 100;
+    padding: 1em;
+    max-width: 12em;
 }
 
+.card>details>p {
+    margin: 0;
+    padding: 1em;
+    color: #1c0e63b3;
+}
 .card.price>footer {
     background-color: rgb(255,255,0);
     height: 3em;

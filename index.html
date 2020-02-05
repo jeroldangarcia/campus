@@ -18,6 +18,7 @@
 
         <section class="cover">
             <h1>CAMPUS TECNIFICACIÓN</h1>
+            <h4>BALONCESTO FEMENINO</h4>
             <img src="img2/logo.png" class="logo" />
             <h2>CALPE 21 - 26 JUNIO 2020</h2>
         </section>
@@ -28,13 +29,15 @@
                 <div class="card">
                     <h4>Salida</h4>
                     <ul>
+                        <li>Explanada del Bernabeu</li>
                         <li>21 Junio</li>
-                        <li>9 horas</li>
+                        <li>9:00 horas</li>
                     </ul>
                 </div>
                 <div class="card">
                     <h4>Regreso</h4>
                     <ul>
+                        <li>Explanada del Bernabeu</li>
                         <li>26 Junio</li>
                         <li>14:00 horas</li>
                     </ul>
@@ -85,15 +88,21 @@
             <div class="content horizontal">
                 <div class="card">
                     <h4>Sesion de Mañana</h4>
-                    <ul>
-                        <li>Mejora Individual</li>
-                    </ul>
+                    <details open>
+                        <summary>Mejora Individual</summary>
+                        <p>Trabajo especificos de bote y tiro en grupos reducidos .</p>
+                    </details>
                 </div>
                 <div class="card">
                     <h4>Sesion de Tarde</h4>
-                    <ul>
-                        <li>Trabajo Colectivo</li>
-                        <li>Competiciones</li>
+                    <details open>
+                        <summary>Trabajo Colectivo</summary>
+                        <p>Desde el 2c2 al 5c5, trabajo más orientado la táctica individual y colectiva .</p>
+                    </details>
+                    <details open>
+                        <summary>Competiciones</summary>
+                        <p>5c5,Two Ball .....</p>
+                    </details>
                     </ul>
                 </div>
             </div>
@@ -114,6 +123,7 @@
                     <h4>Tiempo Libre</h4>
                     <ul>
                         <li>Playa de Calpe</li>
+                        <li>Veladas Nocturnas</li>
                     </ul>
                 </div>
             </div>
@@ -129,37 +139,39 @@
                         <li>Excursiones</li>
                         <li>Actividades Ocio</li>
                         <li>Entrenadores Titulados</li>
-                    </ul>
-                    <footer> 350 € </footer>
-                </div>
-                <div class="card price">
-                    <ul>
-                        <li>Alojamiento en pensión completa</li>
-                        <li>Ropa de Entrenamiento</li>
-                        <li>Excursiones</li>
-                        <li>Actividades Ocio</li>
-                        <li>Entrenadores Titulados</li>
                         <li>Transporte ida y vuelta</li>
                         <li>Picnic de vuelta</li>
                     </ul>
-                    <footer> 375 €</footer>
+                    <footer> 350 €</footer>
                 </div>
             </div>
         </section>
         <section class="contact">
-            <h3>Formulario de Contacto</h3>
-            <div class="content">
+            <h3>Formulario de Inscripción</h3>
+            <form class="content" action="">
                 <div class="field">
-                    <label>Nombre</label>
-                    <input type="text" />
+                    <label>*Nombre</label>
+                    <input name="nombre" type="text" required/>
                 </div>
                 <div class="field">
-                    <label>Correo Electrónico</label>
-                    <input type="email" />
+                    <label>*Apellidos</label>
+                    <input name="apellidos" type="text" required/>
+                </div>
+                <div class="field">
+                    <label>*Correo Electrónico</label>
+                    <input name="email" type="email" required/>
+                </div>
+                <div class="field">
+                    <label>*Telefono Contacto</label>
+                    <input name="telefono" type="email" required/>
+                </div>
+                <div class="field">
+                    <label>Club de Procedencia</label>
+                    <input name="club" type="email" />
                 </div>
                 <br /><br />
                 <button>Enviar</button>
-            </div>
+            </form>
         </section>
     </main>
 
